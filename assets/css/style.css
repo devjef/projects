@@ -261,6 +261,9 @@ body .sobre .sobre__info .sobre__box {
   display: flex;
   margin-top: 1.5rem;
 }
+body .sobre .sobre__info .sobre__box:last-child {
+  margin-top: 0;
+}
 body .sobre .sobre__info .sobre__box .sobre__imagem.sobre__imagem--baby {
   background: url(../img/emoji_baby.png) no-repeat center/cover;
 }
@@ -288,7 +291,6 @@ body .sobre .sobre__info .sobre__box .sobre__conteudo.link {
   text-align: center;
 }
 body .sobre .sobre__info .sobre__box .sobre__conteudo .sobre__link {
-  margin-right: 0.5rem;
   text-decoration: none;
 }
 body .sobre .sobre__info .sobre__box .sobre__conteudo .sobre__link .sobre__icons {
@@ -297,7 +299,6 @@ body .sobre .sobre__info .sobre__box .sobre__conteudo .sobre__link .sobre__icons
 }
 body .sobre .sobre__info .sobre__box .sobre__conteudo .sobre__link .sobre__email {
   color: white;
-  margin-top: 1rem;
 }
 body .sobre .sobre__info .sobre__box .sobre__conteudo .conteudo__texto {
   font-size: 0.8rem;
@@ -322,6 +323,20 @@ body .sobre .sobre__info .sobre__box .sobre__conteudo .conteudo__texto {
     align-self: center;
     height: 40px;
     width: 40px;
+  }
+  body .sobre .sobre__info .sobre__box .sobre__conteudo.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  body .sobre .sobre__info .sobre__box .sobre__conteudo .sobre__link {
+    margin-right: 0.5rem;
+  }
+  body .sobre .sobre__info .sobre__box .sobre__conteudo .sobre__email {
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -353,6 +368,14 @@ body .sobre .sobre__info .sobre__box .sobre__conteudo .conteudo__texto {
   body .sobre .sobre__info .sobre__box .sobre__conteudo {
     text-align: left;
     width: 100%;
+  }
+  body .sobre .sobre__info .sobre__box .sobre__conteudo.link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
   }
 }
 

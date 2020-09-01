@@ -10,6 +10,10 @@ body {
                 display: flex;
                 margin-top: 1.50rem;
 
+                &:last-child {
+                    margin-top: 0;
+                }
+
                 .sobre__imagem {
 
                     &.sobre__imagem--baby {
@@ -47,8 +51,7 @@ body {
                     }
 
                     .sobre__link {
-                        
-                        margin-right: .5rem;
+                    
                         text-decoration: none;
 
                         .sobre__icons {
@@ -58,7 +61,6 @@ body {
 
                         .sobre__email {
                             color: white;
-                            margin-top: 1rem;
                         }
                     }
         
@@ -91,6 +93,25 @@ body {
                         align-self: center;
                         height: 40px;
                         width: 40px;
+                    }
+
+                    .sobre__conteudo {
+
+                        &.link {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 50%;
+                        }
+                        .sobre__link {
+                            margin-right: .5rem;
+                        }
+
+                        .sobre__email {
+                            text-align: center;
+                        }
                     }
                 }
             }
@@ -128,10 +149,19 @@ body {
                         height: 60px;
                         width: 60px;
                     }
-        
+
                     .sobre__conteudo {
                         text-align: left;
                         width: 100%;
+
+                        &.link {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 20%;
+                        }
                     }
                 }
             }
