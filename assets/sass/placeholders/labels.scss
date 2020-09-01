@@ -1,0 +1,42 @@
+@import '../variaveis/cores';
+
+%javascript {
+    background-color: $orange;
+    color: black;
+}
+
+%react {
+    background-color: $blue;
+    color: $white;
+}
+
+%node {
+    background-color: $green;
+    color: $white;
+}
+
+%sass {
+    background-color: $red;
+    color: $white;
+}
+
+%c-sharp {
+    background-color: $gray;
+    color: white;
+}
+
+%unity {
+    background-color: $white;
+    color: black;
+}
+
+%html {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+%css {
+    background-color: $blue;
+    color: $white;
+}

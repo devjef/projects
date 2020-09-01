@@ -1,0 +1,14 @@
+body {
+    font-family: 'Nunito', sans-serif;
+
+    strong {
+        font-weight: bold;
+    }
+}
+
+@import './placeholders/labels.scss';
+@import './inicio/perfil.scss';
+@import './cabecalho/menu.scss';
+@import './projetos/projetos.scss';
+@import './projetos/label.scss';
+@import './sobre/sobre.scss'

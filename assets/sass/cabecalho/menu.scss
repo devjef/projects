@@ -1,0 +1,54 @@
+.cabecalho {
+    background-color: black;
+    height: auto;
+    padding: 20px;
+
+    .cabecalho__menu {
+        display: flex;
+        align-items: center;
+
+        .cabecalho__lista {
+            display: flex;
+
+            .cabecalho__link {
+                text-decoration: none;
+
+                &:hover {
+                    font-weight: 600;
+                }
+
+                .cabecalho__itens {
+                    color: white;
+                    margin-right: 1rem;
+                    white-space: nowrap;
+
+                    &.ativo {
+                      font-weight: 600;  
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+@media screen and (min-width: 0) {
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho__menu {
+        justify-content : space-between;
+
+        .cabecalho__imagem {
+            background: url('../img/emoji_2.png') no-repeat center / cover;
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+}

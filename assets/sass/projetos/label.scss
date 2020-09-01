@@ -1,0 +1,46 @@
+.projeto__label {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+
+    .label {
+        margin-right: 5px;
+        padding: 3px 5px;
+        border-radius: 2px;
+        font-size: .80rem;
+        font-weight: 700;
+    }
+
+    .label--javascript {
+        @extend %javascript !optional;
+    }
+
+    .label--react {
+        @extend %react !optional;
+    }
+
+    .label--sass {
+        @extend %sass !optional;
+    }
+
+    .label--c-sharp {
+        @extend %c-sharp !optional;
+    }
+
+    
+    .label--unity {
+        @extend %unity !optional;
+    }
+
+    .label--node {
+        @extend %node !optional;
+    }
+
+    .label--html {
+        @extend %html !optional;
+    }
+
+    .label--css {
+        @extend %css !optional;
+    }
+}

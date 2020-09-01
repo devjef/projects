@@ -1,0 +1,140 @@
+body {
+    position: relative;
+    .sobre {
+    
+        .sobre__info {
+          position: absolute;
+          z-index: 3;
+
+            .sobre__box {
+                display: flex;
+                margin-top: 1.50rem;
+
+                .sobre__imagem {
+
+                    &.sobre__imagem--baby {
+                        background: url(../img/emoji_baby.png) no-repeat center / cover ;
+                    }
+
+                    &.sobre__imagem--children {
+                        background: url(../img/emoji_children.png) no-repeat center / cover ;
+                    }
+    
+                    &.sobre__imagem--faculdade {
+                        background: url(../img/emoji_faculdade.png) no-repeat center / cover ;
+                    }
+    
+                    &.sobre__imagem--game {
+                        background: url(../img/emoji_game.png) no-repeat center / cover ;
+                    }
+    
+                    &.sobre__imagem--me {
+                        background: url(../img/emoji_2.png) no-repeat center / cover ;
+                    }
+    
+                    &.sobre__imagem--bike {
+                        background: url(../img/emoji_bike.png) no-repeat center / cover ;
+                    }
+                }
+        
+                .sobre__conteudo {
+                    color: white;
+                    line-height: 1.4;
+                    margin: 10px;
+
+                    &.link {
+                        text-align: center;
+                    }
+
+                    .sobre__link {
+                        
+                        margin-right: .5rem;
+                        text-decoration: none;
+
+                        .sobre__icons {
+                            color: white;
+                            font-size: 1.20rem;
+                        }
+
+                        .sobre__email {
+                            color: white;
+                            margin-top: 1rem;
+                        }
+                    }
+        
+                    .conteudo__texto {
+                        font-size: .80rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 0) {
+    body {
+        .sobre {
+            background: black;
+            height: 100vh;
+
+            .sobre__info {
+                background: black;
+                left:auto;
+                right: auto;
+                top: 05%;
+        
+                .sobre__box {
+                    flex-direction: column;
+                    text-align: center;
+        
+                    .sobre__imagem {
+                        align-self: center;
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+            }
+        }  
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    body {
+        .sobre {
+            .sobre__overlay {
+                background-color: rgba(0, 0, 0, 0.9);
+                height: 100vh;
+                width: 100%;
+                z-index: 2;
+                position: absolute;
+            }
+
+            .sobre__banner {
+                background: url(../img/space.jpg) no-repeat center / cover;
+                height: 100vh;
+            }
+            .sobre__info {
+                background: none;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+        
+                .sobre__box {
+                    display: flex;
+                    flex-direction: row;
+        
+                    .sobre__imagem {
+                        height: 60px;
+                        width: 60px;
+                    }
+        
+                    .sobre__conteudo {
+                        text-align: left;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
