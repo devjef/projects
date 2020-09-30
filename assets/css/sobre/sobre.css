@@ -1,0 +1,130 @@
+body {
+  position: relative;
+}
+body .sobre .sobre__info {
+  position: absolute;
+  z-index: 3;
+}
+body .sobre .sobre__info .sobre__box {
+  display: flex;
+  margin-top: 1.5rem;
+}
+body .sobre .sobre__info .sobre__box:last-child {
+  margin-top: 0;
+}
+body .sobre .sobre__info .sobre__box .sobre__imagem.sobre__imagem--baby {
+  background: url(../img/emoji_baby.png) no-repeat center/cover;
+}
+body .sobre .sobre__info .sobre__box .sobre__imagem.sobre__imagem--children {
+  background: url(../img/emoji_children.png) no-repeat center/cover;
+}
+body .sobre .sobre__info .sobre__box .sobre__imagem.sobre__imagem--faculdade {
+  background: url(../img/emoji_faculdade.png) no-repeat center/cover;
+}
+body .sobre .sobre__info .sobre__box .sobre__imagem.sobre__imagem--game {
+  background: url(../img/emoji_game.png) no-repeat center/cover;
+}
+body .sobre .sobre__info .sobre__box .sobre__imagem.sobre__imagem--me {
+  background: url(../img/emoji_2.png) no-repeat center/cover;
+}
+body .sobre .sobre__info .sobre__box .sobre__imagem.sobre__imagem--bike {
+  background: url(../img/emoji_bike.png) no-repeat center/cover;
+}
+body .sobre .sobre__info .sobre__box .sobre__conteudo {
+  color: white;
+  line-height: 1.4;
+  margin: 10px;
+}
+body .sobre .sobre__info .sobre__box .sobre__conteudo.link {
+  text-align: center;
+}
+body .sobre .sobre__info .sobre__box .sobre__conteudo .sobre__link {
+  text-decoration: none;
+}
+body .sobre .sobre__info .sobre__box .sobre__conteudo .sobre__link .sobre__icons {
+  color: white;
+  font-size: 1.2rem;
+}
+body .sobre .sobre__info .sobre__box .sobre__conteudo .sobre__link .sobre__email {
+  color: white;
+}
+body .sobre .sobre__info .sobre__box .sobre__conteudo .conteudo__texto {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 0) {
+  body .sobre {
+    background: black;
+    height: 100vh;
+  }
+  body .sobre .sobre__info {
+    background: black;
+    left: auto;
+    right: auto;
+    top: 5%;
+  }
+  body .sobre .sobre__info .sobre__box {
+    flex-direction: column;
+    text-align: center;
+  }
+  body .sobre .sobre__info .sobre__box .sobre__imagem {
+    align-self: center;
+    height: 40px;
+    width: 40px;
+  }
+  body .sobre .sobre__info .sobre__box .sobre__conteudo.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  body .sobre .sobre__info .sobre__box .sobre__conteudo .sobre__link {
+    margin-right: 0.5rem;
+  }
+  body .sobre .sobre__info .sobre__box .sobre__conteudo .sobre__email {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  body .sobre .sobre__overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+  }
+  body .sobre .sobre__banner {
+    background: url(../img/space-compact.jpg) no-repeat center/cover;
+    height: 100vh;
+  }
+  body .sobre .sobre__info {
+    background: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  body .sobre .sobre__info .sobre__box {
+    display: flex;
+    flex-direction: row;
+  }
+  body .sobre .sobre__info .sobre__box .sobre__imagem {
+    height: 60px;
+    width: 60px;
+  }
+  body .sobre .sobre__info .sobre__box .sobre__conteudo {
+    text-align: left;
+    width: 100%;
+  }
+  body .sobre .sobre__info .sobre__box .sobre__conteudo.link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
+}
+
+/*# sourceMappingURL=sobre.css.map */

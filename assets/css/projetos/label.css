@@ -1,0 +1,14 @@
+.projeto__label {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.projeto__label .label {
+  margin-right: 5px;
+  padding: 3px 5px;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=label.css.map */

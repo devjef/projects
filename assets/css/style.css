@@ -59,7 +59,7 @@ body .perfil .perfil__overlay {
   z-index: 2;
 }
 body .perfil .perfil__banner {
-  background: url("../img/space.jpg") no-repeat center/cover;
+  background: url("../img/space-compact.jpg") no-repeat center/cover;
   height: 100vh;
 }
 body .perfil .perfil__info {
@@ -223,7 +223,7 @@ body .perfil .perfil__info .perfil__menu .menu__link .menu__itens {
   }
   .projetos .projeto {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -232,7 +232,7 @@ body .perfil .perfil__info .perfil__menu .menu__link .menu__itens {
   }
   .projetos .projeto {
     width: calc(25% - 20px);
-    height: 300px;
+    height: auto;
   }
   .projetos .projeto:hover {
     transform: scale(105%);
@@ -348,7 +348,7 @@ body .sobre .sobre__info .sobre__box .sobre__conteudo .conteudo__texto {
     position: absolute;
   }
   body .sobre .sobre__banner {
-    background: url(../img/space.jpg) no-repeat center/cover;
+    background: url(../img/space-compact.jpg) no-repeat center/cover;
     height: 100vh;
   }
   body .sobre .sobre__info {

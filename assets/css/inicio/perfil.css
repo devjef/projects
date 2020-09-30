@@ -1,0 +1,97 @@
+body .perfil {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+}
+body .perfil .perfil__overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+body .perfil .perfil__banner {
+  background: url("../img/space-compact.jpg") no-repeat center/cover;
+  height: 100vh;
+}
+body .perfil .perfil__info {
+  align-items: center;
+  display: flex;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+body .perfil .perfil__info .perfil__imagem {
+  background: url("../img/emoji_2.png") no-repeat center/cover;
+  height: 60px;
+  width: 60px;
+}
+body .perfil .perfil__info .perfil__ops {
+  background: url("../img/ops.png") no-repeat center/cover;
+  height: 60px;
+  width: 60px;
+}
+body .perfil .perfil__info .perfil__texto {
+  color: white;
+  flex-direction: column;
+  margin: 10px;
+}
+body .perfil .perfil__info .perfil__texto .perfil__funcao {
+  margin-top: 0.5rem;
+}
+body .perfil .perfil__info .perfil__menu {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 100%;
+  white-space: nowrap;
+  width: 100%;
+}
+body .perfil .perfil__info .perfil__menu .menu__link {
+  text-decoration: none;
+}
+body .perfil .perfil__info .perfil__menu .menu__link.ativo {
+  font-weight: 600;
+}
+body .perfil .perfil__info .perfil__menu .menu__link:hover {
+  font-weight: 600;
+}
+body .perfil .perfil__info .perfil__menu .menu__link .menu__itens {
+  color: white;
+}
+
+@media screen and (min-width: 0) {
+  .perfil__nome {
+    font-size: 1.25rem;
+    white-space: nowrap;
+  }
+
+  .perfil__funcao {
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .menu__itens {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .perfil__nome {
+    font-size: 1.5rem;
+  }
+
+  .perfil__funcao {
+    font-size: 1rem;
+  }
+
+  .menu__itens {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+/*# sourceMappingURL=perfil.css.map */
