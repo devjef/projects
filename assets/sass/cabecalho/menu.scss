@@ -19,12 +19,15 @@
 
                 .cabecalho__itens {
                     color: white;
-                    margin-right: 1rem;
                     white-space: nowrap;
 
                     &.ativo {
                       font-weight: 600;  
                     }
+                }
+
+                .cabecalho__itens--primeiro {
+                    margin-right: 1rem;
                 }
             }
         }
