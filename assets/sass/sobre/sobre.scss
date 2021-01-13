@@ -81,13 +81,16 @@ body {
 
             .sobre__info {
                 background: black;
-                left:auto;
-                right: auto;
-                top: 05%;
+                display:  flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
         
                 .sobre__box {
                     flex-direction: column;
                     text-align: center;
+                    width: 100%;
         
                     .sobre__imagem {
                         align-self: center;

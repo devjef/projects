@@ -59,13 +59,16 @@ body .sobre .sobre__info .sobre__box .sobre__conteudo .conteudo__texto {
   }
   body .sobre .sobre__info {
     background: black;
-    left: auto;
-    right: auto;
-    top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
   }
   body .sobre .sobre__info .sobre__box {
     flex-direction: column;
     text-align: center;
+    width: 100%;
   }
   body .sobre .sobre__info .sobre__box .sobre__imagem {
     align-self: center;
